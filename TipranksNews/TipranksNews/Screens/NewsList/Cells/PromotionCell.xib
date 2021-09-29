@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PromotionCell" rowHeight="70" id="KGk-i7-Jjw" customClass="PromotionCell" customModule="TipranksNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4c-uD-JHW" userLabel="ContainerView">
+                        <rect key="frame" x="10" y="10" width="300" height="57"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XfU-hq-gxo">
+                                <rect key="frame" x="10" y="15" width="280" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotion!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gql-Er-flI">
+                                        <rect key="frame" x="0.0" y="3.5" width="152" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6L0-Fy-Sqq">
+                                        <rect key="frame" x="160" y="0.0" width="120" height="27"/>
+                                        <color key="backgroundColor" red="0.023529411760000001" green="0.59607843140000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="66b-WJ-dz7"/>
+                                            <constraint firstAttribute="height" constant="30" id="iVM-Fh-sQY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <size key="titleShadowOffset" width="2" height="1"/>
+                                        <state key="normal" title="Go To Promotion">
+                                            <color key="titleColor" red="0.81960784310000001" green="0.94117647059999998" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToPromotion:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jtg-4d-dcp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XfU-hq-gxo" secondAttribute="trailing" constant="10" id="Trc-zZ-tno"/>
+                            <constraint firstItem="XfU-hq-gxo" firstAttribute="top" secondItem="S4c-uD-JHW" secondAttribute="top" constant="15" id="UWr-c0-vQd"/>
+                            <constraint firstItem="XfU-hq-gxo" firstAttribute="leading" secondItem="S4c-uD-JHW" secondAttribute="leading" constant="10" id="nOP-2E-WqA"/>
+                            <constraint firstAttribute="bottom" secondItem="XfU-hq-gxo" secondAttribute="bottom" constant="15" id="zqR-IG-837"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S4c-uD-JHW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QcS-NO-KeH"/>
+                    <constraint firstAttribute="bottom" secondItem="S4c-uD-JHW" secondAttribute="bottom" constant="10" id="TYq-eH-4bS"/>
+                    <constraint firstAttribute="trailing" secondItem="S4c-uD-JHW" secondAttribute="trailing" constant="10" id="pZA-rs-XT6"/>
+                    <constraint firstItem="S4c-uD-JHW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xlF-VM-3MG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="S4c-uD-JHW" id="6Tw-0A-PDZ"/>
+                <outlet property="gotoPromotionButton" destination="6L0-Fy-Sqq" id="N7I-qM-knr"/>
+            </connections>
+            <point key="canvasLocation" x="-130.43478260869566" y="57.589285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
