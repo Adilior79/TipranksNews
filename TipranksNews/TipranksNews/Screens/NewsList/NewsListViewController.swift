@@ -173,12 +173,12 @@ extension NewsListViewController {
     
     // get the real article index without the promotion indexes
     private func getArticleIndex(tableIndexRow: Int) -> Int {
-        var promotionIndex = 3
+        var index = 0
         var promotionsCountBelowIndex = 0
         
-        while promotionIndex < tableIndexRow {
+        while index < promotionsIndexes.count, promotionsIndexes[index] < tableIndexRow {
             promotionsCountBelowIndex += 1
-            promotionIndex += 10
+            index += 1
         }
         
         return tableIndexRow - promotionsCountBelowIndex
